@@ -1,0 +1,12 @@
+---
+title: My Fourth Blog Post
+author: Eimantas Ulcinas
+description: "I had some challenges, but asking in the community really helped!"
+image:
+  url: "https://docs.astro.build/assets/rays.webp"
+  alt: "Thumbnail of Astro rays."
+pubDate: 2024-05-27
+tags: ["astro", "learning in public", "setbacks", "community"]
+---
+
+Today is the day I finally managed to upload my progress to Vercel and can now share publicly my progress!
