@@ -7,6 +7,10 @@ const identity = {
   hobbies: ["F1", "video games", "anime"],
 };
 const skills = ["HTML", "CSS", "JavaScript", "ReactPress"];
+
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
 
 <html lang="en">
@@ -34,5 +38,11 @@ const skills = ["HTML", "CSS", "JavaScript", "ReactPress"];
     <br />
     <p>2024-05-20</p>
     <p>Here are a few facts about me:</p>
+
+    <br />
+    <p>2024-05-27</p>
+    {happy && <p>I am happy to be learnning Astro!</p>}
+    {finished && <p>I finished this tutorial!</p>}
+    {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
   </body>
 </html>
