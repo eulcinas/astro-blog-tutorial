@@ -10,3 +10,5 @@ tags: ["astro", "learning in public", "setbacks", "community"]
 ---
 
 Today is the day I finally managed to upload my progress to Vercel and can now share publicly my progress!
+
+[Back to posts](../../blog)

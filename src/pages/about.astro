@@ -1,4 +1,6 @@
 ---
+import "../styles/global.css";
+
 const pageTitle = "About Me";
 const identity = {
   firstName: "Eimantas",
@@ -11,6 +13,10 @@ const skills = ["HTML", "CSS", "JavaScript", "ReactPress"];
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = "navy";
+const fontWeight = "bold";
+const textCase = "uppercase";
 ---
 
 <html lang="en">
@@ -27,6 +33,13 @@ const goal = 3;
     <a href="/blog/">Blog</a>
 
     <h1>{pageTitle}</h1>
+    <style define:vars={{ skillColor, fontWeight, textCase }}>
+      .skill {
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textCase);
+      }
+    </style>
     <h2>... and my new Astro site!</h2>
 
     <br />
@@ -38,6 +51,22 @@ const goal = 3;
     <br />
     <p>2024-05-20</p>
     <p>Here are a few facts about me:</p>
+
+    <ul>
+      <li>My name is {identity.firstName}.</li>
+      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+      {
+        identity.hobbies.length >= 2 && (
+          <li>
+            Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+          </li>
+        )
+      }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+      {skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
 
     <br />
     <p>2024-05-27</p>
